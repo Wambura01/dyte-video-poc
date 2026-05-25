@@ -1,0 +1,220 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+  padding: 2rem;
+  font-family: var(--font-geist-sans);
+}
+
+.formWrapper {
+  background: linear-gradient(135deg, #1e1e2e 0%, #2a2a3e 100%);
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 3rem;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.formWrapper h1 {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  color: #aaa;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.formGroup input,
+.formGroup select {
+  padding: 0.75rem;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background-color: #2a2a3e;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.submitButton {
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.submitButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  background-color: rgba(255, 107, 107, 0.1);
+  border: 1px solid #ff6b6b;
+  color: #ff6b6b;
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Join meeting name form styles */
+.nameFormContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+  padding: 2rem;
+}
+
+.nameFormWrapper {
+  background: linear-gradient(135deg, #1e1e2e 0%, #2a2a3e 100%);
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 3rem;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.nameFormWrapper h2 {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.nameForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.helperText {
+  margin: 0.35rem 0 0;
+  color: #a9adc1;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.backgroundControls {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: min(320px, calc(100vw - 2rem));
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  background: rgba(15, 15, 20, 0.82);
+  backdrop-filter: blur(12px);
+  color: #fff;
+}
+
+.backgroundControlsLabel {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #c6cadc;
+}
+
+.backgroundControls input[type='file'] {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #2a2a3e;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.backgroundControls select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #2a2a3e;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+/* Video container styles */
+.videoContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+}
+
+.loadingScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .formWrapper,
+  .nameFormWrapper {
+    padding: 2rem;
+  }
+
+  .backgroundControls {
+    top: auto;
+    right: 1rem;
+    left: 1rem;
+    bottom: 1rem;
+    width: auto;
+  }
+
+  .formWrapper h1,
+  .nameFormWrapper h2 {
+    font-size: 1.5rem;
+  }
+}

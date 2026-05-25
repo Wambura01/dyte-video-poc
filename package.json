@@ -9,6 +9,12 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@cloudflare/realtimekit": "^1.4.0",
+    "@cloudflare/realtimekit-react": "^1.4.0",
+    "@cloudflare/realtimekit-react-ui": "^1.1.2",
+    "@cloudflare/realtimekit-ui": "^1.1.2",
+    "@cloudflare/realtimekit-ui-addons": "^0.1.0",
+    "@cloudflare/realtimekit-virtual-background": "^0.0.2",
     "next": "16.2.6",
     "react": "19.2.4",
     "react-dom": "19.2.4"
