@@ -8,10 +8,10 @@ import { getMeetingById } from '@/utils/dyte'
  */
 export async function GET(
   request: NextRequest,
-  { params }: { params: Promise<{ meetingId: string }> }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const { meetingId } = await params
+    const { id: meetingId } = await params
 
     // Validate meeting ID
     if (!meetingId) {
